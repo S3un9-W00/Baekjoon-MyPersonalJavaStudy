@@ -1,0 +1,19 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String word = sc.nextLine().trim();
+		String[] listw = word.split(" ");
+		
+		if(word.equals("")) {
+			System.out.println(0);
+		}else {
+			System.out.println(listw.length);
+		}
+		
+		sc.close();
+		
+    }
+}

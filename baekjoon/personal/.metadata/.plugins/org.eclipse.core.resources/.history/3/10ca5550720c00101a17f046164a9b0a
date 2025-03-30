@@ -1,0 +1,29 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String[] alpha = sc.nextLine().split("");
+		
+		int bunji = 0;
+		
+		String cnt = null;
+		
+		for(int i = 0; i < alpha.length; i++) {
+			if(alpha[bunji].equalsIgnoreCase(alpha[i])) {
+				cnt = alpha[i];
+			} else {
+				bunji++;
+				continue;
+			}
+		}
+		System.out.println(cnt);
+		
+		
+		
+		sc.close();
+		
+    }
+}

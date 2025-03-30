@@ -1,0 +1,51 @@
+package personal_study;
+
+import java.util.ArrayList; //어레이리스트를 쓰기위해 라이브러리 불러오기
+
+public class study04 {
+	public static void main(String[] args) {
+//		어레이리스트
+//		ArrayList는 배열과 비슷하지만 기능이 더 많다. 배열은 처음부터 칸을 딱 정하지만
+//		ArrayList는 그냥 사용자가 추가할수록 더 늘어난다.
+		
+		ArrayList<Integer> list = new ArrayList<>();
+//		ArrayList<자료형> 배열이름 = new ArrayList<>();로 선언할수있다.
+		
+//		위 리스트에 값 추가
+		list.add(3); //하나를 추가했으므로 배열의 칸이 1칸이 됨.
+		list.add(7); //하나를 더 추가해서 배열의 칸이 2칸으로 늘어남.
+		list.add(10); //3칸으로 늘어남.
+		list.add(1); //4칸으로 늘어남.
+		list.add(78); //5칸으로 늘어남.
+		
+		System.out.println(list); //리스트 출력
+		//그냥 배열과는 다르게 배열 이름만 써서 출력해서 잘 출력된다.
+		// 출력 결과 : [3, 7, 10, 1, 78]
+		
+		list.add(0, 100); //0번지에 100값을 넣기
+		
+		System.out.println(list);
+		//출력 결과 : [100, 3, 7, 10, 1, 78]
+		// 이렇게 중간에 값을 넣어버리면 그 자리에 값이 들어가고 나머지는 밀린다.
+		
+		System.out.println(list.get(0)); //get은 그 인수의 값의 번지의 값을 출력한다.
+		//출력 결과 : 100
+		
+		System.out.println(list.size()); //length랑 똑같다.
+		//출력 결과 : 6
+		
+		System.out.println(list.remove(0)); //0번지의 값을 지우고 거기의 값를 반환
+		//출력 결과 : 100
+		
+//		어레이리스트도 for문과 같이 쓴 예시다.
+		for(int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i) + " ");
+			//출력 결과 : 3 7 10 1 78
+		}
+//		그렇지만 어레이리스트는 아래의 코드로 쓰는게 훨씬 좋다.
+		for(int i: list) {
+			System.out.println(list.get(i));
+		}
+		
+	}
+}

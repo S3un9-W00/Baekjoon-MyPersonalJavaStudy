@@ -1,0 +1,35 @@
+package no_1;
+import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// A
+		int y = sc.nextInt();
+		String ys = String.format("%04d", y);
+		int m = sc.nextInt();
+		String ms = String.format("%02d", m);
+		int d = sc.nextInt();
+		String ds = String.format("%02d", d);
+		
+		//B
+		int y2 = sc.nextInt();
+		String ys2 = String.format("%04d", y2);
+		int m2 = sc.nextInt();
+		String ms2 = String.format("%02d", m2);
+		int d2 = sc.nextInt();
+		String ds2 = String.format("%02d", d2);
+		
+		String ymd = ys+"/"+ms+"/"+ds;
+		String ymd2 = ys2+"/"+ms2+"/"+ds2;
+		
+		System.out.println(ymd);
+		System.out.println(ymd2);
+		
+		sc.close();
+	}
+}

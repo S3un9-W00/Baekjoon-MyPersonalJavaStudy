@@ -1,0 +1,14 @@
+package personal_study;
+
+public class study02 {
+	public static void main(String[] args) {
+//		스트링버퍼와 스트링
+		
+		String s = ""; //String변수 생성
+		
+		s += "Hello"; //"Hello"라는 문자열 넣기
+		s += " Java"; //" Java"라는 문자열 넣기
+		System.out.println(s);
+		
+	}
+}

@@ -1,0 +1,28 @@
+package personal_study;
+
+public class study03 {
+	public static void main(String[] args) {
+//		배열
+		
+		int[] array1 = new int[5]; //5칸의 정수형 배열을 생성
+		//int면 저 다섯칸에 {0,0,0,0,0}이 들어있는것이다.
+		//String이면 저 다섯칸에{null, null, null, null, null}이 있는것이다.
+		
+		//array1의 다섯칸에 다 값을 넣는 모습이다.
+		array1[0] = 1;
+		array1[1] = 2;
+		array1[2] = 3;
+		array1[3] = 4;
+		array1[4] = 5;
+		//배열이름[번지] 형식이다.
+		//배열은 1부터 5까지 시작하는것이 아니고 무조건 첫번째는 0부터시작한다(제로인덱싱)
+//		그러므로 5칸이여서 0,1,2,3,4가 되는것이다.
+		
+		System.out.println(array1[3]);
+		//특정 원소만 출력 가능하다.
+		
+		int[] array2 = {1,2,3,4,5}; //선언과 동시에 값을 넣는것도 가능하다.
+		
+		
+	}
+}

@@ -1,0 +1,27 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int max = 0;
+		
+		for(int i = 1; i < a && i < b; i++) {
+			if(a%2 == 0 && b%2 == 0) {
+				max = i;
+			}
+		}
+		
+		System.out.println(max);
+		System.out.println((a*b)/max);
+		
+		
+		
+		sc.close();
+		
+    }
+}

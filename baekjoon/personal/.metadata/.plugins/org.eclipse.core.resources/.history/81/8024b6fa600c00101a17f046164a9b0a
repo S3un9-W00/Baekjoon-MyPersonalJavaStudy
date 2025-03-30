@@ -1,0 +1,35 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+	
+		double avg = 0;
+		int sum = 0;
+		
+		if(n > 1000) {
+			System.out.println(0);
+		}else {
+			for(int i = 0; i < n; i++) {
+				int score = sc.nextInt();
+				if(score > 100 || score < 0) {
+					System.out.println(0);
+					break;
+				} else {
+					sum += score;
+				}
+				
+			}
+		}
+		
+		avg = (double)(sum) / (double)(n);
+		
+		System.out.println(avg);
+		
+		sc.close();
+		
+    }
+}

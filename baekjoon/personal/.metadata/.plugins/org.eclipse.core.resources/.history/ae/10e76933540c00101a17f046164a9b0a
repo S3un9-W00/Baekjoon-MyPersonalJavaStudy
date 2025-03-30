@@ -1,0 +1,25 @@
+package no_1;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int t = sc.nextInt();
+		String[] array = new String[t];
+		for(int i = 0; i < array.length; i++) {
+			int cnt = sc.nextInt();
+			String S = sc.next();
+			array = S.split("");
+			for(int j = 0; j < array.length; j++) {
+				for(int k = 0; k < cnt; k++) {
+					System.out.println(array[i]);
+				}
+			}
+		}
+		
+		
+		sc.close();
+	}
+}

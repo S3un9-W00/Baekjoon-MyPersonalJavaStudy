@@ -1,0 +1,12 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String word = sc.next();
+		String[] wordl = word.split(" ");
+		
+		System.out.println(Arrays.toString(wordl));
+    }
+}

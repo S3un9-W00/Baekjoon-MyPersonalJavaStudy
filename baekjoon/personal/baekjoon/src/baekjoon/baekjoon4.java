@@ -1,0 +1,25 @@
+package baekjoon;
+import java.util.*;
+
+public class baekjoon4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		
+		System.out.println(gcd(a, b));
+		System.out.println((a * b) / gcd(a, b));
+		
+		
+		
+		sc.close();
+		
+    }
+	public static int gcd(int num1, int num2) {
+		if(num2 == 0)
+			return num1;
+		return gcd(num2, num1 % num2);
+	}
+}

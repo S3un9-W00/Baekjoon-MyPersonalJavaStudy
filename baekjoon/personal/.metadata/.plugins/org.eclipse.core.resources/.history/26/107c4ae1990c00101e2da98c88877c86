@@ -1,0 +1,31 @@
+package no_1;
+import java.util.*;
+
+public class no_1 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int x = sc.nextInt();
+		
+		int[] array = new int[n];
+		
+		for(int i = 0; i < n; i++) {
+			int num = sc.nextInt();
+			
+			array[i] = num;
+			
+		}
+		
+		for(int i = 0; i < n; i++) {
+			if(array[i] < x) {
+				System.out.print(array[i] + " ");
+			} else {
+				continue;
+			}
+		}
+	
+		
+    }
+}

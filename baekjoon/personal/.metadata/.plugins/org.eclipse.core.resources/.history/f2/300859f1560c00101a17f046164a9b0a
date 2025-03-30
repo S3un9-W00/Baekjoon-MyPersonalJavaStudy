@@ -1,0 +1,29 @@
+package no_1;
+import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class no_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// A
+		int y = sc.nextInt();
+		int m = sc.nextInt();
+		int d = sc.nextInt();
+		
+		//B
+		int y2 = sc.nextInt();
+		int m2 = sc.nextInt();
+		int d2 = sc.nextInt();
+		
+		String ymd = y+"/"+m+"/"+d;
+		String ymd2 = y2+"/"+m2+"/"+d2;
+		
+		System.out.println(ymd);
+		System.out.println(ymd2);
+		
+		sc.close();
+	}
+}
