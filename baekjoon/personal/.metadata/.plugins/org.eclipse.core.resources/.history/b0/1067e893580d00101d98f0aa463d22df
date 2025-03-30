@@ -1,0 +1,31 @@
+package baekjoon;
+import java.util.*;
+
+public class baekjoon7 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] array = new int[10];
+		
+		for(int i = 0; i < array.length; i++) {
+			int num = sc.nextInt();
+			array[i] = num;
+		}
+		
+		int real = 0;
+		int cnt = 0;
+		
+		for(int i = 0; i < array.length; i++) {
+			if(i >= 2) {
+				real+=1;
+			}
+			
+			if(array[real]%42 != array[i]%42) {
+				cnt+=1;
+			}
+		}
+		
+		System.out.println(cnt);
+		
+		
+	}
+}

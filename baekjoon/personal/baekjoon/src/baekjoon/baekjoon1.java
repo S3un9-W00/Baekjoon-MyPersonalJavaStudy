@@ -17,7 +17,9 @@ public class baekjoon1 {
         
         if(y2 - y1 > 1000 || y2 - y1 == 1000 && (m1 < m2 || m1 == m2 && d1 <= d2)) System.out.println("gg");
         else System.out.println("D-" + (total2 - total1));
+        sc.close();
     }
+	
 
     static int calcDay(int y, int m, int d){
         int[] day = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
