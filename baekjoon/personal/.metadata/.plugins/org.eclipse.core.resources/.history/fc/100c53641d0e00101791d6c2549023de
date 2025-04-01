@@ -1,0 +1,23 @@
+package baekjoon;
+
+import java.util.*;
+
+public class baekjoon8 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int lengthh = sc.nextInt();
+		
+		HashSet<String> yet_array = new HashSet<>();
+		
+		for(int i = 0; i < lengthh; i++) {
+			String word = sc.nextLine();
+			yet_array.add(word);
+		}
+		
+		List<String> array = new ArrayList<>(yet_array);
+		
+		Collections.sort(array);
+		 System.out.println(array);
+		
+	}
+}

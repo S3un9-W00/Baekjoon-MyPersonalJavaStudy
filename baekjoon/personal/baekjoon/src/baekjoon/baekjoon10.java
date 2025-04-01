@@ -1,0 +1,31 @@
+package baekjoon;
+
+import java.util.*;
+
+public class baekjoon10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		
+		
+		for(int i = 0; i < num; i++) {
+			String OX = sc.next();
+			int score = 0;
+			int steak = 0;
+			
+			for(int j = 0; j < OX.length(); j++) {
+				if(OX.charAt(j) == 'O') {
+					steak++;
+					score+=steak;
+				} else {
+					steak = 0;
+				}
+			}
+			System.out.println(score);
+		}
+		
+		sc.close();
+	}
+}

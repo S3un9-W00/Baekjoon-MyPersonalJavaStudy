@@ -1,0 +1,22 @@
+package baekjoon;
+
+import java.util.*;
+
+public class baekjoon9 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String word = sc.next().toUpperCase();
+		
+		int[] alpha_cnt = new int[26];
+		
+		for(char alpha : word.toCharArray()) {
+			if(Character.isLetter(alpha)) {
+				int cnt = alpha - 'A';
+				alpha_cnt[cnt]++;
+			}
+		}
+		
+		System.out.println(Arrays.toString(alpha_cnt));
+	}
+}

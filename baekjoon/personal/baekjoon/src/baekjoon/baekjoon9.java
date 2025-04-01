@@ -1,0 +1,46 @@
+package baekjoon;
+
+import java.util.*;
+
+public class baekjoon9 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String word = sc.next().toUpperCase();
+		
+		int[] alpha_cnt = new int[26];
+		
+		for(char alpha : word.toCharArray()) {
+			if(Character.isLetter(alpha)) {
+				int cnt = alpha - 'A';
+				alpha_cnt[cnt]++;
+			}
+		}
+		
+		char result = '0';
+		
+		int max = 0;
+		
+		boolean same = false;
+		
+		for(int i = 0; i < alpha_cnt.length; i++) {
+			if(alpha_cnt[i] > max) {
+				max = alpha_cnt[i];
+				result = (char) (i + 'A');
+				same = false;
+			} else if(alpha_cnt[i] == max) {
+				same = true;
+			}
+		}
+		
+		if(same == true) {
+			System.out.println("?");
+		} else {
+			System.out.println(result);
+		}
+		
+		sc.close();
+		
+		
+	}
+}

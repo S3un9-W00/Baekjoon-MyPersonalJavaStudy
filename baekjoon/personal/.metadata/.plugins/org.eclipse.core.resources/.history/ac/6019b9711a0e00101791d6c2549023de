@@ -1,0 +1,21 @@
+package baekjoon;
+
+import java.util.*;
+
+public class baekjoon8 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int lengthh = sc.nextInt();
+		
+		String[] array = new String[lengthh];
+		
+		for(int i = 0; i < lengthh; i++) {
+			String word = sc.next();
+			array[i] = word;
+		}
+		
+		Arrays.sort(array, Comparator.comparing(String::length));
+		
+		System.out.println(Arrays.toString(array));
+	}
+}
